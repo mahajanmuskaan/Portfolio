@@ -1,29 +1,37 @@
-#title {
-    background-color: #F2CD5C;
+.title{
+    background-image:url("images/Background.png");
 }
 .introduction{
+    display : flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.intro-part{
     text-align: center;
+    margin: 2.5rem auto;
+    padding: auto;
 }
-.introduction h1,.introduction p,.connect-btn{
-    margin: 1.5rem auto;
-}
-.introduction h1 {
+.intro-part h1 {
     font-family: 'Alkatra', cursive;
-    font-size: 4rem;
-    line-height: 1.5;
+    font-size: 5rem;
+    line-height: 1.8;
     color: red;
 }
 
-.introduction p {
+.intro-part p {
     font-family: 'Montaga', serif;
     font-size: 1.3rem;
     line-height: 1.5;
     color: black;
 }
+.connect-btn{
+    margin-top: 2rem;
+}
 
 #image {
-    width: 300px;
-    min-height: 400px;
+    max-width: 300px;
+    min-height: 320px;
 }
 
 .nav-link {
@@ -46,7 +54,7 @@
 
 .container-items {
     display: grid;
-    row-gap: 1em;
+    row-gap: 0.5em;
     margin: auto 1rem;
 }
 
@@ -68,4 +76,15 @@
     flex: 100px;
     margin: 0.5rem;
     padding: 1rem;
+}
+
+.footer{
+    background-color: black;
+}
+.footer .footer-header{
+    text-align: center;
+    color: white;
+    font-family: 'Montaga', serif;
+    font-size: 1.5rem;
+    padding: 2rem;
 }
