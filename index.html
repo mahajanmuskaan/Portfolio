@@ -32,9 +32,9 @@
 
 <body>
     <!-- for 1st section Page -->
-    <section style="background-color: #F2CD5C;">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-dark">
+    <section class="intro-section" style="background-color: #F2CD5C;">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-dark" class="nav-section">
                 <span class="navbar-brand fw-bold" style="font-size: 2rem; color: black;">
                     muskaan mahajan
                 </span>
@@ -59,22 +59,22 @@
             </nav>
             <div class="introduction" id="Intro-About">
                 <div class="intro-part">
-                    <h1>Hi. I'm Muskaan.</h1>
-                    <p>
-                        An Aspiring Web Developer. <br>
-                        I am currently working as Member of Technical Staff at <a
-                            href="https://www.metricstream.com/"><strong>MetricStream.</strong></a>
-                    </p>
-                    <a href="https://drive.google.com/file/d/1AZNDgg13x6xRy0bURyqqZuP20XPmRfAp/view?usp=share_link"
-                        download>
-                        <button type="button" class="btn btn-dark btn-lg connect-btn"><img src="images/download.png"
-                                class="download"></img> Download my Resume</button>
-                    </a>
+                    <div class="intro-content">
+                        <h1>Hi. I'm Muskaan.</h1>
+                        <p>
+                            I am an aspiring web developer with a passion for creating captivating online experiences.
+                            <br>With
+                            a love for crafting beautiful websites and a constant desire to learn, I am eager to explore
+                            new
+                            opportunities in the world of web development.
+                        </p>
+                    </div>
                 </div>
-                <div class="image-part">
-                    <img id="image" src="images/Web Developer girl.webp" alt="cloud-image">
+                <div class="intro-part">
+                    <div class="intro-image">
+                        <img id="image" src="images/Web Developer girl.webp" alt="cloud-image">
+                    </div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -99,7 +99,7 @@
     </section>
 
     <!-- My Most Recent Work -->
-    <section class="container-sm" id="projects">
+    <section class="container project-section" id="projects">
         <div class="heading">
             <h2>My Most Recent Work</h2>
             <h5>Here are a few projects I've worked on.</h5>
@@ -109,10 +109,11 @@
                 <img class="card-image" src="images/Picture-gallery.png" alt="Picture-gallery">
             </div>
             <div class="card-description">
-                <h5>Picture Gallery</h5>
+                <h5><strong>Picture Gallery</strong></h5>
                 <h6>This is a simple landing page for a picture gallery website. It provides a visually appealing
                     interface for users to explore and view photos. The landing page consists of a navigation bar, a
                     carousel section, a gallery section, and a footer.</h6>
+                <p><strong>Technologies Used : </strong> HTML5 , CSS3 and Javascript</p>
                 <span>Links : <a href="https://muskaan-picture-gallery.netlify.app/"><img class="card-links"
                             src="images/external-link.png" alt="Netlify Link"></a>
                     <a href="https://github.com/mahajanmuskaan/ImageGallery.git"><img class="card-links"
@@ -121,12 +122,13 @@
         </div>
         <div class="card">
             <div class="card-description">
-                <h5>City Weather</h5>
+                <h5><strong>City Weather</strong></h5>
                 <h6>This project displays the current weather information of a specific city. It uses the Public API
                     provided by
                     Weather API. The user can enter the city name and click the search button to see the current weather
                     information. The weather information displayed includes temperature in Celsius and Fahrenheit,
                     humidity, wind speed, pressure, weather condition, and weather condition icon.</h6>
+                <p><strong>Technologies Used : </strong> HTML5 , CSS3 and Javascript</p>
                 <span>Links : <a href="https://muskaan-city-weather.netlify.app/"><img class="card-links"
                             src="images/external-link.png" alt="Netlify Link"></a>
                     <a href="https://github.com/mahajanmuskaan/CityWeather.git"><img class="card-links"
@@ -138,6 +140,13 @@
         </div>
         </div>
 
+    </section>
+
+    <section class="download-section">
+        <a href="https://drive.google.com/file/d/1AZNDgg13x6xRy0bURyqqZuP20XPmRfAp/view?usp=share_link" download>
+            <button type="button" class="btn btn-dark btn-lg connect-btn"><img src="images/download.png"
+                    class="download"></img> Download my Resume</button>
+        </a>
     </section>
 
     <!-- Footer Section -->
