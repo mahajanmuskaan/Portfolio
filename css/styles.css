@@ -37,7 +37,6 @@ h5 {
 
 .intro-part {
     flex: 1 1 60%;
-    /* Adjusted flex value to make the left side larger */
 }
 
 .intro-content {
@@ -50,13 +49,11 @@ h5 {
     margin: 1rem auto;
     padding: 0;
     max-width: 300px;
-    /* Adjust the width as needed */
 }
 
 .intro-part h1 {
     font-family: 'Alkatra', cursive;
     font-size: 3rem;
-    /* Decreased font size for better readability */
     line-height: 1.5;
     color: red;
 }
@@ -292,7 +289,6 @@ h5 {
     .intro-part h1 {
         font-family: 'Alkatra', cursive;
         font-size: 2.5rem;
-        /* Decreased font size for better readability */
         line-height: 1.2;
         color: red;
         margin-bottom: 1rem;
