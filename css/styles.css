@@ -103,7 +103,7 @@ h5 {
 
 .tech-stack {
     margin: 2rem auto;
-    padding: auto;
+    padding: 0;
 }
 
 .tech-stack h1 {
@@ -116,24 +116,32 @@ h5 {
 .flex-items {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 2rem;
-    padding: auto;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+    padding: 0;
 }
 
 .flex-items img {
-    width: auto;
     height: 120px;
+    object-fit: cover;
+    transition: transform 0.6s ease;
 }
 
 .box {
     text-align: center;
     flex: 1 1 25%;
-    margin: 0.5rem;
-    padding: 0.5rem;
-    animation: animation 0.6s linear 0.2s infinite both;
-    -webkit-animation: animation 0.6s linear 0.2s infinite both;
+    margin: 1rem;
+    padding: 1rem;
+    animation: animation 0.6s linear 0.3s infinite both;
+    -webkit-animation: animation 0.6s linear 0.3s infinite both;
 }
+
+.box:hover img {
+    cursor: pointer;
+    transform: rotateY(360deg);
+}
+
 
 /**
  * ----------------------------------------
@@ -234,19 +242,18 @@ h5 {
     margin: 1.5rem;
     border: none;
     justify-content: space-evenly;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    /* Add a subtle box shadow */
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    /* Add smooth transitions */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.329);
+    transition: transform 0.2s ease-in-out, box-shadow 0.5s ease-in-out;
     cursor: pointer;
-    /* Change cursor to indicate interactivity */
 }
 
 .card:hover {
-    transform: translateY(-5px);
-    /* Add a slight upward translation on hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Increase box shadow on hover */
+    transform: translateY(-10px);
+    box-shadow: 0 5px 10px rgba(5, 57, 247, 0.934);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
 }
 
 .card-title,
@@ -332,7 +339,7 @@ h5 {
     }
 
     .card-image {
-        max-width: 300px;
+        max-width: 320px;
     }
 
     .card-description h6 {
