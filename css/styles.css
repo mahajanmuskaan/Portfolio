@@ -1,3 +1,5 @@
+
+
 .navbar-section>ul {
     display: flex;
     flex-direction: row;
@@ -88,22 +90,12 @@
     min-height: 320px;
 }
 
-.nav-link {
-    color: black;
-    font-size: 1.5rem;
-    margin: 1rem;
-}
-
-.nav-link:hover {
-    color: blue;
-}
-
 .tech-stack {
     margin: 2rem auto;
     padding: 0;
 }
 
-.tech-stack h1 {
+.tech-stack h2 {
     font-family: 'Alkatra', cursive;
     font-size: 2.5rem;
     color: black;
@@ -231,7 +223,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 1.5rem;
+    margin: 1.8rem;
     border: none;
     justify-content: space-evenly;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.645);
@@ -250,12 +242,13 @@
 
 .card-title,
 .card-description {
-    margin: 1rem;
+    text-align: justify;
+    margin: 0.5rem;
     padding: 1rem;
 }
 
 .card-image {
-    max-width: 380px;
+    max-width: 400px;
 }
 
 .card-links {
@@ -273,21 +266,45 @@
 }
 
 @media screen and (max-width: 480px) {
-    .introduction {
-        height: 60%;
+    .navbar-section>ul {
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        padding: 1.5rem;
+        justify-content: center;
+    }
+
+    .navbar-section>ul>li {
+        margin: auto;
+        padding: 0.5rem;
+        list-style: none;
+        font-size: 1rem;
+        font-weight: 500;
     }
 
     .intro-part h1 {
         font-family: 'Alkatra', cursive;
-        font-size: 2.5rem;
+        font-size: 2rem;
         line-height: 1.2;
-        margin: 1rem;
+        margin: 2rem;
     }
 
     .intro-part p {
         font-family: 'Montaga', serif;
-        font-size: 1rem;
-        line-height: 1.2;
+        font-size: 1.1rem;
+        padding: 0.8rem;
+    }
+
+    .tech-stack {
+        margin: 1.5rem auto;
+        padding: 1rem;
+    }
+
+    .tech-stack h2 {
+        font-family: 'Alkatra', cursive;
+        font-size: 2rem;
+        color: black;
+        text-align: center;
     }
 
     .flex-items {
@@ -308,6 +325,20 @@
         padding: 0.3rem;
         animation: animation 0.6s linear 0.2s infinite both;
         -webkit-animation: animation 0.6s linear 0.2s infinite both;
+    }
+
+    .heading {
+        text-align: center;
+        margin: 0.5rem;
+    }
+
+    .heading h2 {
+        font-family: 'Alkatra', cursive;
+        font-size: 2rem;
+    }
+
+    .heading h5 {
+        padding: 0.3rem;
     }
 
     .project-section {
@@ -343,10 +374,7 @@
     }
 }
 
-@media screen and (max-width: 768px) {
-    .introduction {
-        height: 80%;
-    }
+@media screen and (max-width: 991px) {
 
     .project-section {
         margin-top: 3rem;
