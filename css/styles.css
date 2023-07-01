@@ -1,68 +1,68 @@
-* {
-    margin: 0;
-    padding: 0;
+.navbar-section>ul {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    padding: 2rem;
+    justify-content: center;
 }
 
-h1 {
-    font-family: 'Montserrat', sans-serif;
+.navbar-section>ul>li {
+    margin: auto;
+    padding: 0.5rem;
+    list-style: none;
+    font-size: 1.5rem;
+    font-weight: 500;
 }
 
-h2 {
-    font-family: 'Roboto', sans-serif;
+.navbar-section>ul>li>a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
 }
 
-h3 {
-    font-family: 'Lato', sans-serif;
-}
-
-h4 {
-    font-family: 'Open Sans', sans-serif;
-}
-
-h5 {
-    font-family: 'Raleway', sans-serif;
-}
-
-.nav-section {
-    margin: 1rem auto;
-    padding: 1.5rem;
+.navbar-section>ul>li>a:hover {
+    border-bottom: .2em solid #f7941e;
+    transition: all ease-in-out 0.1s;
 }
 
 .introduction {
     display: flex;
+    justify-content: space-around;
     align-items: center;
-    justify-content: space-between;
     flex-wrap: wrap;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='1000' preserveAspectRatio='none' viewBox='0 0 1440 1000'%3e%3cg clip-path='url(%26quot%3b%23SvgjsClipPath1087%26quot%3b)' fill='none'%3e%3crect width='1440' height='1000' x='0' y='0' fill='%2332325d'%3e%3c/rect%3e%3ccircle r='62.16' cx='719.54' cy='389.47' fill='url(%26quot%3b%23SvgjsLinearGradient1088%26quot%3b)'%3e%3c/circle%3e%3ccircle r='97.145' cx='1044.36' cy='947.94' fill='url(%26quot%3b%23SvgjsLinearGradient1089%26quot%3b)'%3e%3c/circle%3e%3ccircle r='72.075' cx='1076.06' cy='355.58' fill='url(%26quot%3b%23SvgjsLinearGradient1090%26quot%3b)'%3e%3c/circle%3e%3ccircle r='68.675' cx='631.84' cy='433.61' fill='url(%26quot%3b%23SvgjsLinearGradient1091%26quot%3b)'%3e%3c/circle%3e%3ccircle r='88.675' cx='953.04' cy='486.69' fill='url(%26quot%3b%23SvgjsLinearGradient1092%26quot%3b)'%3e%3c/circle%3e%3ccircle r='36.99' cx='44.4' cy='162.97' fill='url(%26quot%3b%23SvgjsLinearGradient1093%26quot%3b)'%3e%3c/circle%3e%3ccircle r='45.5' cx='283.87' cy='442.5' fill='url(%26quot%3b%23SvgjsLinearGradient1094%26quot%3b)'%3e%3c/circle%3e%3ccircle r='56.075' cx='703.57' cy='714.99' fill='%2343468b'%3e%3c/circle%3e%3c/g%3e%3cdefs%3e%3cclipPath id='SvgjsClipPath1087'%3e%3crect width='1440' height='1000' x='0' y='0'%3e%3c/rect%3e%3c/clipPath%3e%3clinearGradient x1='595.22' y1='389.47' x2='843.86' y2='389.47' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1088'%3e%3cstop stop-color='%2384b6e0' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%23464a8f' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='850.0699999999999' y1='947.94' x2='1238.6499999999999' y2='947.94' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1089'%3e%3cstop stop-color='%23e298de' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%23484687' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='931.91' y1='355.58' x2='1220.21' y2='355.58' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1090'%3e%3cstop stop-color='%23ab3c51' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%234f4484' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='494.49' y1='433.61' x2='769.19' y2='433.61' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1091'%3e%3cstop stop-color='%23ab3c51' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%234f4484' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='775.6899999999999' y1='486.69000000000005' x2='1130.3899999999999' y2='486.69000000000005' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1092'%3e%3cstop stop-color='%2332325d' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%23424488' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='-29.580000000000005' y1='162.97' x2='118.38' y2='162.97' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1093'%3e%3cstop stop-color='%2384b6e0' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%23464a8f' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='192.87' y1='442.5' x2='374.87' y2='442.5' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1094'%3e%3cstop stop-color='%23f29b7c' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%237e6286' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
 }
 
 .intro-part {
-    flex: 1 1 60%;
+    flex: 1 0 55%;
 }
 
 .intro-content {
     text-align: center;
-    margin: 1.5rem auto;
-    padding: 0;
+    color: white;
+    margin-bottom: 0;
 }
 
 .intro-image {
-    margin: 1rem auto;
-    padding: 0;
-    max-width: 300px;
+    display: flex;
+    justify-content: center;
 }
+
 
 .intro-part h1 {
     font-family: 'Alkatra', cursive;
     font-size: 3rem;
     line-height: 1.5;
-    color: red;
+    margin: 1.5rem;
 }
 
 .intro-part p {
     font-family: 'Montaga', serif;
     font-size: 1.3rem;
     line-height: 1.5;
-    color: black;
 }
 
 .download-section {
@@ -227,11 +227,6 @@ h5 {
     padding: 1rem;
 }
 
-.cards {
-    display: flex;
-    flex-direction: column;
-}
-
 .card {
     display: flex;
     flex-direction: row;
@@ -239,14 +234,14 @@ h5 {
     margin: 1.5rem;
     border: none;
     justify-content: space-evenly;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.329);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.645);
     transition: transform 0.2s ease-in-out, box-shadow 0.5s ease-in-out;
     cursor: pointer;
 }
 
 .card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 5px 10px rgba(5, 57, 247, 0.934);
+    box-shadow: 0 10px 10px rgba(5, 57, 247, 0.97);
     -webkit-transform: translateY(-10px);
     -moz-transform: translateY(-10px);
     -ms-transform: translateY(-10px);
@@ -260,15 +255,7 @@ h5 {
 }
 
 .card-image {
-    max-width: 400px;
-}
-
-.card-image:hover {
-    transition: all 0.5s ease-in-out;
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
+    max-width: 380px;
 }
 
 .card-links {
@@ -286,12 +273,16 @@ h5 {
 }
 
 @media screen and (max-width: 480px) {
+    .introduction {
+        height: 60%;
+    }
+
     .intro-part h1 {
         font-family: 'Alkatra', cursive;
         font-size: 2.5rem;
         line-height: 1.2;
         color: red;
-        margin-bottom: 1rem;
+        margin: 1rem;
     }
 
     .intro-part p {
@@ -335,7 +326,7 @@ h5 {
     }
 
     .card-image {
-        max-width: 320px;
+        max-width: 300px;
     }
 
     .card-description h6 {
@@ -355,6 +346,10 @@ h5 {
 }
 
 @media screen and (max-width: 768px) {
+    .introduction {
+        height: 80%;
+    }
+
     .project-section {
         margin-top: 3rem;
     }
